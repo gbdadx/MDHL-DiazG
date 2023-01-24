@@ -23,9 +23,15 @@ nav{
 nav a{
     display:block;
 }
+nav a:active{
+    text-decoration: none;
+}
 section{
+    display:inline;
+    width: 70%;
     
 }
+
 h2{
     text-align: center;
     font-size: 2rem;
