@@ -5,16 +5,24 @@
 }
 
 header {
-    font-size: 2rem;
     background-image: url("../img/design1_image2.jpg");
     background-size: cover;
-    background-position-y: bottom;
-    margin: 0px;
+    background-position-y: 20%;
+    min-height: 200px;
 
 }
 
-h1 {
-    text-shadow: 3px 3px 10px #FFF;
+header #transpbox {
+    display: inline-block;
+    background-color: #ffffff;
+    opacity: 0.6;
+    border-radius: 5px;
+}
+
+header #transpbox h1 {
+    padding:-10px;
+    font-weight: bold;
+    color: #000000;
 }
 
 figure {
