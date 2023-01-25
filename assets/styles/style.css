@@ -26,7 +26,7 @@ header #transpbox {
 }
 
 header #transpbox h1 {
-    
+    font-size: 2.5em;
     font-weight: bold;
     color: #000000;
 }
