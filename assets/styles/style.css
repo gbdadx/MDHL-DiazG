@@ -1,102 +1,195 @@
+@import url('https://fonts.cdnfonts.com/css/comic-sans');
 
- @import url('https://fonts.cdnfonts.com/css/comic-sans');
 
-                
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: 'Comic Sans', sans-serif;
- }
- 
- header {
-     background-image: url("../img/design1_image2.jpg");
-     background-size: cover;
-     background-position-y: 20%;
-     min-height: 200px;
-     position: relative;
- 
- }
- 
- header #transpbox {
-     display: inline-block;
- }
- 
- header #transpbox h1 {
-     font-size: 2.5em;
-     font-weight:900;
-     color: #000000;
-     margin-top: 10px;
-     background-color: #ffffff;
-     opacity: 0.6;
-     border-radius: 5px;
-     padding:1px 5px;
-    }
- 
- figure {
-     display: inline;
-     position: absolute;
-     bottom: -108px;
-     right: 16px;
- 
- }
- 
- #logo {
-     width: 150px;
-     height: auto;
- 
- }
- 
- #titulo {
-     padding: 5px 0px;
-     font-weight: bold;
-     text-align: center;
-     text-align: center;
-     background-color: black;
-     margin: 5px 0px;
- }
- 
- h2 {
-     font-size: 2rem;
-     padding: 5px;
-     font-weight: bold;
-     color: white;
-     background-color: black;
-     margin-top: 0%;
- }
- 
- nav {
-     display: inline;
-     width: 20%;
-     position: fixed;
-     height: 100%;
- }
- 
- nav a {
-     display: block;
-     padding: 20px 10px;
- }
- 
- #navhome {
-     text-decoration: none;
-     color:blue;
- }
- 
- #contenido {
-     display: inline;
-     margin-left: 15%;
-     padding: 1px 16px;
-     height: 100%;
-     position: fixed;
- 
- 
- }
- 
- article, div {
-     padding: 10px 10px;
- }
- 
- 
- p {
-     padding: 10px;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans', sans-serif;
+}
+
+header {
+    margin-top: 90px;
+    background-image: url("../img/design1_image2.jpg");
+    background-size: cover;
+    background-position-y: 20%;
+    min-height: 200px;
+    position: relative;
+
+}
+
+header h1 {
+    margin-top: -100px;
+    padding-bottom: 20px;
+    font-size: 2.5em;
+}
+
+figure {
+    display: inline;
+    position: absolute;
+    bottom: -108px;
+    right: 16px;
+
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+
+}
+
+#titulo {
+    padding: 10px 0px;
+    font-weight: bold;
+    text-align: center;
+    text-align: center;
+    background-color: black;
+    margin: 5px 0px;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    margin-top: 0%;
+}
+
+.container {
+    display: flexbox;
+    flex-direction: column;
+}
+
+nav {
+    display: inline;
+    position: fixed;
+    height: 100%;
+    position: absolute;
+    bottom: -75px;
+    right: 16px;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    background-color: darkgray;
+    color: white;
+    border-radius: 3px;
+}
+
+nav a:active {
+    background-color: black;
+    box-shadow: 10px 10px 10px lightgray;
+}
+
+nav a:hover {
+    box-shadow: 5px 5px 5px lightslategray;
+}
+
+#navhome {
+    background-color: black;
+    color: white;
+}
+
+#contenido {
+    margin-left: 5%;
+    padding: 10px;
+    height: 70vh;
+}
+
+article, div , section{
+    padding: 20px;
+}
+
+p {
+    padding: 10px;
+}
+
+footer {
+    min-width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+.footerimagen {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/*SLIDER o CARROUSELL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrousel{
+    width: 100%;
+    display:flex;
+flex-direction: column;
+background-color: beige;
+}
+
+.conteCarrousel{
+    width: 75%;
+    height: 300px;
+    overflow: hidden;
+    align-self:flex-end;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+.conteCarrouselController{
+    width: 75%;
+    display:flex;
+    align-self:flex-end;
+
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+font-weight: bold;}
+.itemCarrousel img{
+width:100%;
+}
+
