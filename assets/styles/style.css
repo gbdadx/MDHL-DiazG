@@ -21,14 +21,16 @@ header {
 header h1 {
     margin-top: -100px;
     padding-bottom: 20px;
+    padding-left: 150px;
     font-size: 2.5em;
 }
 
 figure {
     display: inline;
     position: absolute;
-    bottom: -108px;
-    right: 16px;
+    top:-100px;
+    left: 16px;
+    margin-right: 60px;
 
 }
 
@@ -39,12 +41,11 @@ figure {
 }
 
 #titulo {
-    padding: 10px 0px;
+    text-align: center;
+    padding: 10px ;
     font-weight: bold;
     text-align: center;
-    text-align: center;
     background-color: black;
-    margin: 5px 0px;
 }
 
 h2 {
@@ -56,18 +57,18 @@ h2 {
     margin-top: 0%;
 }
 
-.container {
-    display: flexbox;
-    flex-direction: column;
+#container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
 }
 
 nav {
-    display: inline;
-    position: fixed;
-    height: 100%;
-    position: absolute;
-    bottom: -75px;
+    display: flex;
+    height: 40px;
     right: 16px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -92,13 +93,17 @@ nav a:hover {
     color: white;
 }
 
-#contenido {
+.contenido {
+    width: 40%;
     margin-left: 5%;
     padding: 10px;
     height: 70vh;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
 }
 
-article, div , section{
+article, div, section {
     padding: 20px;
 }
 
@@ -123,73 +128,72 @@ footer {
 }
 
 /*SLIDER o CARROUSELL*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+.carrousel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-.carrousel{
+.conteCarrousel {
     width: 100%;
-    display:flex;
-flex-direction: column;
-background-color: beige;
-}
-
-.conteCarrousel{
-    width: 75%;
     height: 300px;
     overflow: hidden;
-    align-self:flex-end;
+    align-self: center;
+
+
 }
 
-.itemCarrousel{
+.itemCarrousel {
     position: relative;
     width: 100%;
-    height: 100%;
+}
+.itemCarrousel img{
+    max-width: 450px;
+    min-width: none;
 }
 
-.itemCarrouselTarjeta{
+.itemCarrouselTarjeta {
     width: 100%;
-    height: 100%;
+
 }
 
-.itemCarrouselArrows{
+.itemCarrouselArrows {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%; 
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px; 
+    padding: 20px;
 }
 
-.itemCarrouselArrows > i:hover {
+
+.itemCarrouselArrows>i:hover {
     cursor: pointer;
 }
 
-.conteCarrouselController{
+.conteCarrouselController {
     width: 75%;
-    display:flex;
-    align-self:flex-end;
+    display: flex;
+    align-self: center;
 
     justify-content: space-evenly;
 }
 
-.conteCarrouselController > a{
+.conteCarrouselController>a {
     text-decoration: none;
     font-size: 2em;
     color: grey;
 }
 
-.itemCarrouselArrows > a > i{
-    color: white;
-font-weight: bold;}
-.itemCarrousel img{
-width:100%;
+.itemCarrouselArrows>a>i {
+    color: black;
+    font-weight: bold;
 }
-
