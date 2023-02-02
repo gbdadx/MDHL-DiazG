@@ -93,17 +93,17 @@ h2 {
 
 nav {
     position: absolute;
-    top: 260px;
+    top: 255px;
     right: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    gap: 0.5em;
 }
 
 nav a {
-    padding: 8px 10px;
-    margin-right: 0.5rem;
+    padding: 8px;
     text-decoration: none;
     background-color: darkgray;
     color: white;
@@ -286,6 +286,7 @@ footer {
     width: 50%;
     display: flex;
     padding: 30px;
+    margin-top: 20px;
     justify-content: center;
 }
 
