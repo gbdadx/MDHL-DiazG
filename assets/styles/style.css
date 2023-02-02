@@ -20,6 +20,18 @@ header {
     background-image: url("../img/design1_image2.jpg");
     background-size: cover;
     background-position-y: 20%;
+
+    min-height: 200px;
+    position: relative;
+
+}
+
+#other {
+    margin-top: 90px;
+    background-image: url("../img/design1_image1.jpg");
+    background-size: cover;
+    background-position-y: 20%;
+
     min-height: 200px;
     position: relative;
 
@@ -91,6 +103,7 @@ nav {
 
 nav a {
     padding: 8px 10px;
+    margin-right: 0.5rem;
     text-decoration: none;
     background-color: darkgray;
     color: white;
@@ -134,16 +147,18 @@ p {
     padding: 10px;
     font-size: 1.1rem;
 }
-.contenido #contact_p{
-    padding-top:50px;
+
+.contenido #contact_p {
+    padding-top: 50px;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.contenido #contact_p p{
-   padding-top: 30px;
-   font-size: 1.3rem;
+.contenido #contact_p p {
+    padding-top: 30px;
+    font-size: 1.3rem;
 }
+
 article, section {
     padding: 20px;
 }
@@ -168,8 +183,14 @@ article ol {
     padding-bottom: 5px;
 }
 
-article ol li {
+article ul {
+    list-style-type: circle;
+    padding-left: 20px;
     padding-bottom: 5px;
+}
+
+article ul li {
+    padding-left: 10px;
 }
 
 /* Set the second layer of list items to lowercase alphabetic */
@@ -211,9 +232,25 @@ table .td_1st {
 }
 
 .inl {
-    display: inline;
+    transition-duration: 3s;
+}
+
+.inl a {
+    font-size: 3em;
+    padding: 5px 10px;
+}
+
+.inl a:active {
+    color: blueviolet;
+    font-weight: bolder;
 
 }
+
+.inl a:hover {
+    color: black;
+}
+
+
 
 span a {
     text-decoration: none;
@@ -243,10 +280,6 @@ footer {
     padding: 20px;
 }
 
-/*
-
-
-*/
 
 
 #galery {
@@ -259,8 +292,8 @@ footer {
 .card {
     padding: 10px;
     transition-duration: 3s;
-    transition-timing-function: linear;   
-     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition-timing-function: linear;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
