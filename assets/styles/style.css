@@ -10,9 +10,10 @@
 
 body {
     min-height: 100vh;
+    min-width: 100%;
     position: relative;
+    margin: 0px;
     padding-bottom: 3rem;
-    position: relative;
 }
 
 header {
@@ -20,7 +21,6 @@ header {
     background-image: url("../img/design1_image2.jpg");
     background-size: cover;
     background-position-y: 20%;
-
     min-height: 200px;
     position: relative;
 
@@ -31,19 +31,31 @@ header {
     background-image: url("../img/design1_image1.jpg");
     background-size: cover;
     background-position-y: 20%;
-
     min-height: 200px;
+    min-width: 100%;
     position: relative;
-
 }
 
-header h1 {
+header #transpbox {
+    display: inline-block;
+}
+
+header #transpbox h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #000000;
+    background-color: #ffffff;
+    opacity: 0.6;
+    border-radius: 5px;
+    padding: 1px 5px;
     margin-top: -85px;
     position: absolute;
     padding-bottom: 20px;
     padding-left: 150px;
     font-size: 2.5em;
 }
+
+
 
 figure {
     display: inline;
@@ -74,6 +86,8 @@ figure {
     font-weight: bold;
     text-align: center;
     background-color: black;
+    min-width: 100%;
+
 }
 
 h2 {
@@ -85,25 +99,20 @@ h2 {
     margin-top: 0%;
 }
 
-#container {
-    display: flex;
-    flex-direction: row;
-    margin-right: 20px;
-}
 
 nav {
     position: absolute;
-    top: 255px;
+    top: 280px;
     right: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    gap: 0.5em;
+    gap: 0.1em 0.5em;
 }
 
 nav a {
-    padding: 8px;
+    padding: 5px;
     text-decoration: none;
     background-color: darkgray;
     color: white;
@@ -124,28 +133,83 @@ nav a:hover {
     color: white;
 }
 
-#contenido {
-    width: 40%;
-    min-height: 100vh;
-    margin-left: 5%;
-    padding: 30px;
-    flex-grow: 2;
+/*  main   */
+#container {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    flex-flow: row wrap;
+    align-items: start;
+    margin: 30px;
+    gap: 10px 15px;
+
 }
 
-#contenido2 {
-    width: 100%;
-    min-height: 100vh;
+/* contenedores dentro del main*/
+#contenido {
+    width: 55%;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightsalmon;
+    padding: 15px;
+    margin: 15px;
+    margin-left: auto;
+
+}
+
+
+#galery {
+    width: 40%;
+    min-width: 375px;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    align-content: center;
+    padding: 15px;
+    margin: 15px;
+    margin-left: auto;
+
+}
+
+.card {
+
+    padding: 5px;
+    /* height: fit-content;*/
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 30px;
+    align-items: center;
+
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    align-self: center;
+}
+
+.photo {
+    width: 95%;
+
+}
+
+.card:hover {
+    background-size: 100% 100%;
+    transform: scale(1.1);
 }
 
 p {
     padding: 10px;
     font-size: 1.1rem;
+}
+
+#contenido2 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    margin-left: auto;
+    background-color: lightsalmon;
+    font-size: 1.2rem;
 }
 
 .contenido #contact_p {
@@ -159,9 +223,6 @@ p {
     font-size: 1.3rem;
 }
 
-article, section {
-    padding: 20px;
-}
 
 
 article h3 {
@@ -201,10 +262,10 @@ article ol>li>ol {
 
 /*table*/
 table {
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 100%;
     align-self: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 table th {
@@ -227,6 +288,7 @@ table .td_1st {
     text-align: center;
 }
 
+/*from footer */
 .stronger {
     font-weight: bold;
 }
@@ -263,6 +325,20 @@ span a {
     justify-content: space-around;
 }
 
+#contact_p {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 20px;
+
+
+}
+
+#contact_p p {
+    font-size: 1.7em;
+}
+
 footer {
     min-width: 100%;
     text-align: center;
@@ -273,44 +349,14 @@ footer {
     bottom: 0px;
 }
 
+p #footerfixed {
+    text-align: center;
+}
 
 .footerimagen {
     color: white;
     font-weight: bold;
+    font-size: 1.5rem;
     padding: 20px;
-}
 
-
-
-#galery {
-    width: 50%;
-    display: flex;
-    padding: 30px;
-    margin-top: 20px;
-    justify-content: center;
-}
-
-.card {
-    padding: 10px;
-    transition-duration: 3s;
-    transition-timing-function: linear;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.card:hover {
-    background-size: 100% 100%;
-    transform: scale(1.2);
-}
-
-
-.card3, .card2 {
-    align-self: center;
-    z-index: 1;
-}
-
-
-
-.card1, .card4 {
-    align-self: center;
-    z-index: 2;
 }
