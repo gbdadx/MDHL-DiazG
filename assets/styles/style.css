@@ -143,6 +143,16 @@ nav a:hover {
 
 }
 
+#container2 {
+    /*game_info's iframes container*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 15px;
+    gap: 20px;
+
+}
+
 /* contenedores dentro del main*/
 #contenido {
     width: 55%;
@@ -356,4 +366,17 @@ p #footerfixed {
     font-size: 1.5rem;
     padding: 20px;
 
+}
+
+/** formulary  **/
+
+/* para quitar el borde */
+fieldset {
+    border: 0;
+    padding:20px;
+}
+
+/* para quitar el legend */
+legend {
+    display: none;
 }
