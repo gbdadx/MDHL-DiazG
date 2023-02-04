@@ -165,6 +165,18 @@ nav a:hover {
 
 }
 
+#contenido3 {
+    /*table container*/
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 15px;
+    margin: 15px;
+    margin-left: auto;
+}
+
 
 #galery {
     width: 40%;
@@ -270,7 +282,7 @@ article ol>li>ol {
 /*table*/
 table {
     font-size: 1.1em;
-    width: 100%;
+    width: 90%;
     align-self: center;
     padding: 20px;
 }
@@ -293,6 +305,7 @@ tr:nth-child(even) {
 
 table .td_1st {
     text-align: center;
+
 }
 
 /*from footer */
@@ -347,10 +360,10 @@ span a {
 }
 
 footer {
-    min-width:100vw;
+    min-width: 100vw;
     position: absolute;
-   display:flex;
-   justify-content:center ;
+    display: flex;
+    justify-content: center;
     bottom: 0;
     left: 0;
     right: 0;
@@ -382,7 +395,7 @@ fieldset {
     flex-flow: row wrap;
     justify-content: start;
     gap: 30px;
-    background-image: linear-gradient(white, crimson);
+    background-image: linear-gradient(white, rgb(226, 89, 117));
 }
 
 form {
@@ -404,4 +417,68 @@ form p {
 
 legend {
     font-weight: bold;
+}
+
+.centered {
+    align-items: baseline;
+    justify-content: center;
+}
+
+.centered0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+.centered1 {
+    padding: 30px;
+
+}
+
+.centered2 {
+    background-color: rgb(234, 245, 245);
+}
+
+.centered3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.centered4 {
+    align-self: flex-start;
+}
+
+
+#date, #schools {
+    min-width: 300px;
+    min-height: 50px;
+    font-size: 1.5rem;
+}
+
+canvas {
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+.buttonS {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 32px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonS:hover {
+    opacity: 1
 }
