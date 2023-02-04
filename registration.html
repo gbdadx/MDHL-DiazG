@@ -29,13 +29,12 @@
         <a href="index.html">Home</a>
         <a href="about.html">About MDHL</a>
         <a href="contact.html">Contact</a>
-        <a href="game_info.html" id="navhome">Game info</a>
+        <a href="game_info.html">Game info</a>
         <a href="rules.html">Rules & Policies</a>
+        <a href="registration.html" id="navhome">Registration</a>
     </nav>
-    <main id="container">
+    <main id="container" class="register">
         <form action="show_data.html." method="post">
-
-
             <fieldset>
                 <label>Player’s First Name:
                     <input type="text" name="firstname" id="firstname">
@@ -43,6 +42,8 @@
                 <label>Last Name:
                     <input type="text" name="lastname" id="lastname">
                 </label>
+            </fieldset>
+            <fieldset>
                 <label>Street Address:
                     <input type="text" name="street" id="street">
                 </label>
@@ -52,49 +53,56 @@
                 <label>Zip Code:
                     <input type="number" name="zip" id="zip">
                 </label>
+            </fieldset>
+            <fieldset>
                 <label>Birth Date(mm/dd/yyyy):
                     <input type="date" name="bday" id="bday">
                 </label>
-                <fieldset>
-                    <h3>Gender</h3>
-                    <label>Female
-                        <input type="radio" name="gender" id="female">
-                    </label>
-                    <label>Male
-                        <input type="radio" name="gender" id="male">
-                    </label>
-                </fieldset>
+            </fieldset>
 
-                <fieldset>
-                    <h3>Grade</h3>
-                    <label>Pre-School
-                        <input type="radio" name="grade" id="preS">
-                    </label>
-                    <label>D1st
-                        <input type="radio" name="grade" id="D1st">
-                    </label>
-                    <label>D2nd
-                        <input type="radio" name="grade" id="D2nd">
-                    </label>
-                    <label>D3rd
-                        <input type="radio" name="grade" id="D3rd">
-                    </label>
-                    <label>D3rd
-                        <input type="radio" name="grade" id="D3rd">
-                    </label>
-                    <label>D4th
-                        <input type="radio" name="grade" id="D4th">
-                    </label>
-                    <label>D5th
-                        <input type="radio" name="grade" id="D5th">
-                    </label>
-                </fieldset>
+          <fieldset>
+                <legend>Gender</legend>
+                <label>Female
+                    <input type="radio" name="gender" id="female">
+                </label>
+                <label>Male
+                    <input type="radio" name="gender" id="male">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Grade</legend>
+                <label>Pre-School
+                    <input type="radio" name="grade" id="preS">
+                </label>
+                <label>D1st
+                    <input type="radio" name="grade" id="D1st">
+                </label>
+                <label>D2nd
+                    <input type="radio" name="grade" id="D2nd">
+                </label>
+                <label>D3rd
+                    <input type="radio" name="grade" id="D3rd">
+                </label>
+                <label>D3rd
+                    <input type="radio" name="grade" id="D3rd">
+                </label>
+                <label>D4th
+                    <input type="radio" name="grade" id="D4th">
+                </label>
+                <label>D5th
+                    <input type="radio" name="grade" id="D5th">
+                </label>
+            </fieldset>
 
             </fieldset>
+
+
             <fieldset>
-                <h3>Which elementary school do you live near?</h3>
-                <p>Closest School:</p>
-                <label>AJ Katzenmaier
+                <legend>
+                    <h3>Which elementary school do you live near?</h3>
+                    <p>Closest School:</p>
+                </legend>                <label>AJ Katzenmaier
                     <input type="checkbox" name="" id="">
                 </label>
                 <label>Greenbay
@@ -116,9 +124,10 @@
 
 
             </fieldset>
+
             <fieldset>
-                <h3> What position(s) do you normally play? (check all that apply)
-                </h3>
+                <legend> What position(s) do you normally play? (check all that apply)
+                </legend>
                 <label>Forward
                     <input type="checkbox" name="lio" id="forward">
                 </label>
@@ -133,8 +142,10 @@
                 </label>
 
             </fieldset>
+
             <fieldset>
-                <h4>Uniform Size: </h4>
+                <legend>Uniform Size: </legend>
+
                 <label>
                     Youth Small
                     <input type="radio" name="size" id="youthS"></label>
@@ -146,22 +157,28 @@
                     <input type="radio" name="size" id="small"></label>
 
             </fieldset>
+
             <section>
                 <h3>
                     Permission to Play </h3>
                 <p>
-                    I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all
+                    I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by
+                    all
                     the
-                    rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
+                    rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical
+                    injury
                     associated
-                    with hockey and in consideration for the "League" accepting the registrant for its hockey programs
+                    with hockey and in consideration for the "League" accepting the registrant for its hockey
+                    programs
                     and
                     activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and
                     associated
-                    personnel and volunteers, including the facilities used for practices and games, against any claim
+                    personnel and volunteers, including the facilities used for practices and games, against any
+                    claim
                     by
                     or on
-                    behalf of the registrant as a result of the registrant’s participation in the programand/or being
+                    behalf of the registrant as a result of the registrant’s participation in the programand/or
+                    being
                     transported
                     to or from MDHL sponsored activities, which transportation
 
@@ -173,38 +190,20 @@
                 </p>
 
 
-                <fieldset>
-
-                    <label>
-                        Parent/GuardianSignature:
-                        <input type="text" name="parent" id="parent">
-                    </label>
-
-                    <label>
-                        Date:
-                        <input type="text" name="date" id="date">
-                    </label>
+                <pre>
 
 
-                </fieldset>
+            Parent/GuardianSignature: ________________________      Date:________________
+                
+            </pre>
+
             </section>
 
-
-
-
-
-
-
-
         </form>
-
-
-
-
-
+       
     </main>
     <footer id="footerfixed">
-        <span class="footerimagen">&copy; &; GYFU &nbsp;2023</span>
+        <span class="footerimagen">&copy; &nbsp; GBDADX &nbsp; 2023</span>
     </footer>
 </body>
 

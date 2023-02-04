@@ -8,7 +8,7 @@
     font-family: 'Comic Sans', sans-serif;
 }
 
-body {
+html, body {
     min-height: 100vh;
     min-width: 100%;
     position: relative;
@@ -347,13 +347,17 @@ span a {
 }
 
 footer {
-    min-width: 100%;
-    text-align: center;
-    bottom: 0;
-    padding: 10px 0px;
-    background-color: black;
+    min-width:100vw;
     position: absolute;
-    bottom: 0px;
+   display:flex;
+   justify-content:center ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0px;
+    margin: 0;
+    background-color: black;
+
 }
 
 p #footerfixed {
@@ -370,13 +374,34 @@ p #footerfixed {
 
 /** formulary  **/
 
-/* para quitar el borde */
+
 fieldset {
     border: 0;
-    padding:20px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    gap: 30px;
+    background-image: linear-gradient(white, crimson);
 }
 
-/* para quitar el legend */
+form {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 15px;
+    gap: 20px;
+
+}
+
+form p {
+    font-size: 1.3rem;
+
+}
+
 legend {
-    display: none;
+    font-weight: bold;
 }
