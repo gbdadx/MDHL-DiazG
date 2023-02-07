@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/comic-sans');
-
+/* 
+color code preview  */
 
 * {
     margin: 0;
@@ -16,8 +17,9 @@ body {
     padding-bottom: 3rem;
 }
 
+/*  header  */
 header {
-    margin-top: 90px;
+    /*  margin-top: 90px;*/
     background-image: url("../img/design1_image2.jpg");
     background-size: cover;
     background-position-y: 20%;
@@ -27,12 +29,13 @@ header {
 }
 
 #other {
+    /* otro container con la segunda foto   */
     margin-top: 90px;
     background-image: url("../img/design1_image1.jpg");
     background-size: cover;
     background-position-y: 20%;
     min-height: 200px;
-    min-width: 100%;
+    min-width: 100vw;
     position: relative;
 }
 
@@ -40,7 +43,7 @@ header #transpbox {
     display: inline-block;
 }
 
-header #transpbox h1 {
+h1 {
     font-size: 2.5em;
     font-weight: 900;
     color: #000000;
@@ -54,8 +57,6 @@ header #transpbox h1 {
     padding-left: 150px;
     font-size: 2.5em;
 }
-
-
 
 figure {
     display: inline;
@@ -100,74 +101,91 @@ h2 {
 }
 
 
-nav {
-    position: absolute;
-    top: 280px;
-    right: 20px;
+/* Style the top navigation bar */
+.navbar {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 0.1em 0.5em;
+    background-color: cadetblue;
 }
 
-nav a {
-    padding: 5px;
-    text-decoration: none;
-    background-color: darkgray;
+/* Style the navigation bar links */
+.navbar a {
     color: white;
-    border-radius: 3px;
-}
-
-nav a:active {
-    background-color: black;
-    box-shadow: 10px 10px 10px lightgray;
-}
-
-nav a:hover {
-    box-shadow: 5px 5px 5px lightslategray;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
 }
 
 #navhome {
-    background-color: black;
-    color: white;
+    background-color: green;
+    color: whitesmoke;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: green;
+    color: whitesmoke;
 }
 
 /*  main   */
 #container {
+    margin: 20px;
     display: flex;
     flex-flow: row wrap;
     align-items: start;
-    margin: 30px;
-    gap: 10px 15px;
+    gap: 10px;
 
 }
+
 
 /* contenedores dentro del main*/
 #contenido {
-    width: 55%;
-    min-width: 375px;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    margin: 15px;
-    margin-left: auto;
+    flex: 48%;
 
 }
 
+#contenido3 {
+    /*table container*/
+    width: 100%;
 
-#galery {
-    width: 40%;
-    min-width: 375px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-content: center;
     padding: 15px;
     margin: 15px;
     margin-left: auto;
+}
+
+/*  container para imagen  */
+#galery {
+    flex: 50%;
 
 }
 
+/*game_info's iframes container*/
+#container2 {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+
+}
+
+/*iframes*/
+iframe {
+    width: 300px;
+    height: 200px;
+    border-style:none;
+}
+
+.maps {
+    padding: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+}
+
+/****************************/
 .card {
 
     padding: 5px;
@@ -222,12 +240,12 @@ p {
 
 
 
-article h3 {
-    padding: 10px 0px;
+article h3, p {
+    padding: 10px 15px;
 }
 
 article h4 {
-    padding: 15px 0px;
+    padding: 15px 20px;
 }
 
 section h3 {
@@ -260,7 +278,7 @@ article ol>li>ol {
 /*table*/
 table {
     font-size: 1.1em;
-    width: 100%;
+    width: 90%;
     align-self: center;
     padding: 20px;
 }
@@ -283,6 +301,7 @@ tr:nth-child(even) {
 
 table .td_1st {
     text-align: center;
+
 }
 
 /*from footer */
@@ -336,17 +355,15 @@ span a {
     font-size: 1.7em;
 }
 
-footer {
-    min-width: 100%;
+/* Footer */
+.footer {
+    padding: 20px;
     text-align: center;
-    bottom: 0;
-    padding: 10px 0px;
-    background-color: black;
-    position: absolute;
-    bottom: 0px;
+    background: #aaa;
+    margin-bottom: 0%;
 }
 
-p #footerfixed {
+.footer p {
     text-align: center;
 }
 
@@ -355,5 +372,208 @@ p #footerfixed {
     font-weight: bold;
     font-size: 1.5rem;
     padding: 20px;
+
+}
+
+
+
+/** formulary  **/
+input, option {
+    font-size: 1.2rem;
+    ;
+}
+
+fieldset {
+    border: 0;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    gap: 30px;
+    background-image: linear-gradient(white, rgb(229, 109, 133));
+}
+
+form {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 15px;
+    gap: 20px;
+
+}
+
+form p {
+    font-size: 1.3rem;
+
+}
+
+legend, label, .centered1 {
+    font-weight: bold;
+}
+
+.centered {
+    align-items: baseline;
+    justify-content: center;
+}
+
+.centered0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+.centered1 {
+    padding: 30px;
+
+}
+
+.centered2 {
+    background-color: rgb(234, 245, 245);
+}
+
+.centered3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.centered4 {
+    align-self: flex-start;
+}
+
+
+#date, #schools {
+    min-width: 300px;
+    min-height: 50px;
+    font-size: 1.5rem;
+}
+
+/*  area ´para firma digital
+canvas {
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+*/
+.buttonS {
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 32px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonS:hover {
+    opacity: 1
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .navbar {
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    table {
+        font-size: smaller;
+    }
+
+    .navbar a {
+        min-width: 100vw;
+        font-size: smaller;
+    }
+
+    #contenido, #galeria, .contenido3 {
+        flex: 100%;
+    }
+
+
+
+    #logo {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: smaller;
+    }
+
+    body, footer, header, form {
+        margin: 0px;
+    }
+
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 450px) {
+    .navbar {
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    #container {
+        margin: 0px;
+    }
+
+    table {
+        font-size: smaller;
+    }
+
+    .navbar a {
+        min-width: 100%;
+        font-size: smaller;
+    }
+
+    #contenido, #galeria, .contenido3 {
+        flex: 100%;
+    }
+
+    #container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: auto;
+    }
+
+    #container2 .maps {
+        flex: 100%;
+    }
+
+
+    #logo {
+        width: 90px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+
+    h2 {
+        font-size: smaller;
+    }
 
 }
