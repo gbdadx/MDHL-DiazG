@@ -9,7 +9,7 @@ color code preview  */
     font-family: 'Comic Sans', sans-serif;
 }
 
-html, body {
+body {
     min-height: 100vh;
     min-width: 100%;
     position: relative;
@@ -35,7 +35,7 @@ header {
     background-size: cover;
     background-position-y: 20%;
     min-height: 200px;
-    min-width: 100%;
+    min-width: 100vw;
     position: relative;
 }
 
@@ -104,7 +104,7 @@ h2 {
 /* Style the top navigation bar */
 .navbar {
     display: flex;
-    background-color: #333;
+    background-color: cadetblue;
 }
 
 /* Style the navigation bar links */
@@ -116,14 +116,14 @@ h2 {
 }
 
 #navhome {
-    background-color: #ddd;
-    color: black;
+    background-color: green;
+    color: whitesmoke;
 }
 
 /* Change color on hover */
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: green;
+    color: whitesmoke;
 }
 
 /*  main   */
@@ -140,7 +140,6 @@ h2 {
 /* contenedores dentro del main*/
 #contenido {
     flex: 48%;
-    background-color: cadetblue;
 
 }
 
@@ -159,7 +158,6 @@ h2 {
 /*  container para imagen  */
 #galery {
     flex: 50%;
-    background-color: aqua;
 
 }
 
@@ -169,6 +167,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 
 
 }
@@ -241,12 +240,12 @@ p {
 
 
 
-article h3 {
-    padding: 10px 0px;
+article h3, p {
+    padding: 10px 15px;
 }
 
 article h4 {
-    padding: 15px 0px;
+    padding: 15px 20px;
 }
 
 section h3 {
@@ -391,7 +390,7 @@ fieldset {
     flex-flow: row wrap;
     justify-content: start;
     gap: 30px;
-    background-image: linear-gradient(white, rgb(226, 89, 117));
+    background-image: linear-gradient(white, rgb(229, 109, 133));
 }
 
 form {
@@ -493,7 +492,7 @@ canvas {
     }
 
     .navbar a {
-        min-width: 100%;
+        min-width: 100vw;
         font-size: smaller;
     }
 
@@ -515,6 +514,10 @@ canvas {
         font-size: smaller;
     }
 
+    body, footer, header, form {
+        margin: 0px;
+    }
+
 }
 
 
@@ -524,6 +527,14 @@ canvas {
         display: flex;
         flex-flow: column;
 
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    #container {
+        margin: 0px;
     }
 
     table {
@@ -544,6 +555,7 @@ canvas {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        margin: auto;
     }
 
     #container2 .maps {
